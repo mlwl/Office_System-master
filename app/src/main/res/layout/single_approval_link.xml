@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/single_approval_link_left_round"
+            style="@style/round_figure_serial_number_style"
+            android:text="1"
+            android:textStyle="italic|bold" />
+
+        <View
+            android:id="@+id/single_approval_link_left_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TextView
+            style="@style/single_approval_right_text_style"
+            android:text="审批环节 : 发起请假申请" />
+
+        <TextView
+            style="@style/single_approval_right_text_style"
+            android:text="处理人 : 马云" />
+
+        <TextView
+            style="@style/single_approval_right_text_style"
+            android:text="职务 : 董事长" />
+
+        <TextView
+            style="@style/single_approval_right_text_style"
+            android:text="处理意见 : 同意" />
+
+        <TextView
+            style="@style/single_approval_right_text_style"
+            android:text="登录IP : 192.168.1.66" />
+
+        <TextView
+            style="@style/single_approval_right_text_style"
+            android:layout_marginBottom="26dp"
+            android:text="审批时间 : 2026-06-26 06:26:26" />
+    </LinearLayout>
+
+</LinearLayout>

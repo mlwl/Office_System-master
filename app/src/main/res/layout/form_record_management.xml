@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:edittextitem="http://schemas.android.com/apk/res-auto"
+    xmlns:tableSuggest="http://schemas.android.com/apk/res-auto"
+    style="@style/form_head_parent_layout_style">
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_title"
+        style="@style/width_match_height_wrap"
+        edittextitem:editText_hint="请输入标题"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="来文标题 : " />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_type"
+        style="@style/editText_item_top"
+        android:layout_marginRight="80dp"
+        android:visibility="gone"
+        edittextitem:editText_hint="请选择来文类型"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="来文类型 : "
+        edittextitem:editText_right_icon="@drawable/selector_pull_down" />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_number"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="请输入文号"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="来文文号 : " />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_unit"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="请输入单位"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="来文单位 : " />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_day"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="请选择日期"
+        edittextitem:editText_is_clickable="false"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="来文日期 : "
+        edittextitem:editText_right_icon="@mipmap/calendar_icon_default" />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_propose_to_idea"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="请输入拟办意见"
+        edittextitem:editText_input_type="textMultiLine"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="拟办意见 : "
+        edittextitem:editText_max_lines="99" />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_approve_idea"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="请编写领导批示"
+        edittextitem:editText_input_type="textMultiLine"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="领导批示 : "
+        edittextitem:editText_max_lines="99" />
+
+    <com.minlu.office_system.customview.TableSuggest
+        android:id="@+id/form_record_management_lead_approve_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tableSuggest:table_first_lie_name="阅者姓名"
+        tableSuggest:table_second_lie_name="阅文时间"
+        tableSuggest:table_third_lie_name="领导批示"
+        tableSuggest:table_title="已批示过的领导" />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_transpond_office"
+        style="@style/editText_item_top"
+        android:layout_marginTop="20dp"
+        edittextitem:editText_hint="请输入拟办意见"
+        edittextitem:editText_input_type="textMultiLine"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="转发处室 : "
+        edittextitem:editText_max_lines="99" />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_record_management_read_transact_suggest"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="请编写领导批示"
+        edittextitem:editText_input_type="textMultiLine"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="阅办意见 : "
+        edittextitem:editText_max_lines="99" />
+
+    <com.minlu.office_system.customview.TableSuggest
+        android:id="@+id/form_record_management_office_read_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tableSuggest:table_first_lie_name="阅者姓名"
+        tableSuggest:table_second_lie_name="阅办时间"
+        tableSuggest:table_third_lie_name="处室阅办"
+        tableSuggest:table_title="已阅办过的领导" />
+
+    <!-- 新增附件按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_add_accessory_parent"
+        style="@style/editText_item_top"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件列表 : "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_add_accessory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/selector_add_accessory_background"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="新增附件"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <!-- 附件列表控件 -->
+    <LinearLayout
+        android:id="@+id/form_record_management_details"
+        style="@style/editText_item_top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附件列表 : "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/form_record_management_details_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>

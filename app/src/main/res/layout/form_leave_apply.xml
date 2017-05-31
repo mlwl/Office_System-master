@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:edittextitem="http://schemas.android.com/apk/res-auto"
+    style="@style/form_head_parent_layout_style">
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_leave_apply_title"
+        style="@style/width_match_height_wrap"
+        edittextitem:editText_hint="请输入标题"
+        edittextitem:editText_left_text="请假标题 : " />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_leave_apply_type"
+        style="@style/editText_item_top"
+        android:layout_marginRight="100dp"
+        edittextitem:editText_hint="请选择"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="请假类型 : "
+        edittextitem:editText_right_icon="@drawable/selector_pull_down" />
+
+    <com.minlu.office_system.customview.EditTextTimeSelector
+        android:id="@+id/form_leave_apply_start_time"
+        style="@style/editText_item_top"
+        edittextitem:time_selector_left_text="开始时间 : " />
+
+    <com.minlu.office_system.customview.EditTextTimeSelector
+        android:id="@+id/form_leave_apply_end_time"
+        style="@style/editText_item_top"
+        edittextitem:time_selector_left_text="结束时间 : " />
+
+    <LinearLayout
+        style="@style/editText_item_top"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.minlu.office_system.customview.EditTextItem
+            android:id="@+id/form_leave_apply_leave_day_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            edittextitem:editText_hint=""
+            edittextitem:editText_input_type="number"
+            edittextitem:editText_is_edit="false"
+            edittextitem:editText_left_text="请假天数 : " />
+
+        <com.minlu.office_system.customview.EditTextItem
+            android:id="@+id/form_leave_apply_leave_day_number_select_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            edittextitem:editText_hint=""
+            edittextitem:editText_right_icon="@drawable/selector_pull_down"
+            edittextitem:editText_input_type="number"
+            edittextitem:editText_is_edit="false"
+            edittextitem:editText_left_text="" />
+    </LinearLayout>
+
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_leave_apply_residue_leave_year_number"
+        style="@style/editText_item_top"
+        android:layout_marginRight="100dp"
+        edittextitem:editText_hint=""
+        edittextitem:editText_input_type="number"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="剩余年假 : " />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_leave_apply_add_up_leave_day_number"
+        style="@style/editText_item_top"
+        android:layout_marginRight="100dp"
+        edittextitem:editText_hint=""
+        edittextitem:editText_input_type="number"
+        edittextitem:editText_is_edit="false"
+        edittextitem:editText_left_text="累计请假 : " />
+
+    <com.minlu.office_system.customview.EditTextItem
+        android:id="@+id/form_leave_apply_remark"
+        style="@style/editText_item_top"
+        edittextitem:editText_hint="各种建议,备注"
+        edittextitem:editText_input_type="textMultiLine"
+        edittextitem:editText_left_text="备注 : "
+        edittextitem:editText_max_lines="6" />
+</LinearLayout>
